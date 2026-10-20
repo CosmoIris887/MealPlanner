@@ -1,0 +1,10 @@
+{
+  "appId": "com.mealplanner.ai",
+  "appName": "AI Food & Meal Planner",
+  "webDir": "dist",
+  "bundledWebRuntime": false,
+  "server": {
+    "androidScheme": "https",
+    "cleartext": true
+  }
+}

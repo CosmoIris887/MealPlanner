@@ -1,0 +1,42 @@
+# Environment & Secrets
+.env
+.env.local
+.env.*.local
+*.env
+!.env.example
+
+# Dependencies
+node_modules/
+
+# SQLite databases & journals (keep local user data private)
+database/*.sqlite
+database/*.sqlite-journal
+
+# Uploads & Temporary Files
+uploads/food-*
+uploads/dataset/
+uploads/temp-zip/
+uploads/*.zip
+uploads/*.tar.gz
+
+# Machine Learning & Training Artifacts (Prevent accidental training weights commits)
+*.npz
+*.npy
+*.onnx
+*.h5
+*.keras
+*.joblib
+*.pkl
+__pycache__/
+*.py[cod]
+
+# Logs
+*.log
+npm-debug.log*
+yarn-debug.log*
+
+# Editor & OS files
+.DS_Store
+Thumbs.db
+.vscode/
+.idea/

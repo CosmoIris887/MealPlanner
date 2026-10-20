@@ -1,0 +1,167 @@
+@import "tailwindcss";
+
+@layer base {
+  :root {
+    --color-primary-green: #2E8B57;
+    --color-primary-green-hover: #267347;
+    --color-light-green: #E8F5E9;
+    --color-light-blue: #EAF4FF;
+    --color-accent-blue: #78B7E8;
+    --color-text-main: #243447;
+    --color-text-muted: #64748B;
+    --color-border: #E2E8F0;
+    --color-bg-page: #F7FAFC;
+    --color-card-bg: #FFFFFF;
+    --font-sans: 'Inter', system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, sans-serif;
+  }
+  
+  body {
+    font-family: var(--font-sans);
+    background-color: #F7FAFC;
+    color: #243447;
+    min-height: 100vh;
+    -webkit-font-smoothing: antialiased;
+  }
+}
+
+/* Professional Health Product Clean Components */
+.card-clean {
+  background-color: #FFFFFF;
+  border: 1px solid #E2E8F0;
+  border-radius: 1rem;
+  box-shadow: 0 1px 3px 0 rgba(0, 0, 0, 0.04), 0 1px 2px -1px rgba(0, 0, 0, 0.04);
+}
+
+.card-clean-hover {
+  background-color: #FFFFFF;
+  border: 1px solid #E2E8F0;
+  border-radius: 1rem;
+  box-shadow: 0 1px 3px 0 rgba(0, 0, 0, 0.04);
+  transition: all 0.2s ease-in-out;
+}
+.card-clean-hover:hover {
+  border-color: #CBD5E1;
+  box-shadow: 0 4px 12px 0 rgba(0, 0, 0, 0.06);
+}
+
+.btn-primary {
+  background-color: #2E8B57;
+  color: #FFFFFF;
+  font-weight: 600;
+  border-radius: 0.75rem;
+  padding: 0.625rem 1.25rem;
+  transition: all 0.15s ease-in-out;
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  gap: 0.5rem;
+  cursor: pointer;
+}
+.btn-primary:hover {
+  background-color: #267347;
+}
+.btn-primary:disabled {
+  opacity: 0.55;
+  cursor: not-allowed;
+}
+
+.btn-secondary {
+  background-color: #FFFFFF;
+  color: #243447;
+  border: 1px solid #E2E8F0;
+  font-weight: 500;
+  border-radius: 0.75rem;
+  padding: 0.625rem 1.25rem;
+  transition: all 0.15s ease-in-out;
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  gap: 0.5rem;
+  cursor: pointer;
+}
+.btn-secondary:hover {
+  background-color: #F8FAFC;
+  border-color: #CBD5E1;
+}
+
+.btn-light-green {
+  background-color: #E8F5E9;
+  color: #2E8B57;
+  border: 1px solid #C8E6C9;
+  font-weight: 600;
+  border-radius: 0.75rem;
+  padding: 0.5rem 1rem;
+  transition: all 0.15s ease-in-out;
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  gap: 0.5rem;
+  cursor: pointer;
+}
+.btn-light-green:hover {
+  background-color: #DCEDC8;
+}
+
+.btn-light-blue {
+  background-color: #EAF4FF;
+  color: #1E40AF;
+  border: 1px solid #BFDBFE;
+  font-weight: 600;
+  border-radius: 0.75rem;
+  padding: 0.5rem 1rem;
+  transition: all 0.15s ease-in-out;
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  gap: 0.5rem;
+  cursor: pointer;
+}
+.btn-light-blue:hover {
+  background-color: #DBEAFE;
+}
+
+/* Legacy utility overrides to clean bright styling */
+.glass-card {
+  background-color: #FFFFFF !important;
+  border: 1px solid #E2E8F0 !important;
+  border-radius: 1rem;
+  box-shadow: 0 1px 3px 0 rgba(0, 0, 0, 0.04), 0 1px 2px -1px rgba(0, 0, 0, 0.04) !important;
+}
+
+.glass-panel {
+  background-color: #FFFFFF !important;
+  border: 1px solid #E2E8F0 !important;
+  border-radius: 1rem;
+}
+
+.gradient-text {
+  color: #2E8B57 !important;
+  -webkit-text-fill-color: #2E8B57 !important;
+}
+
+.gradient-button {
+  background-color: #2E8B57 !important;
+  color: #FFFFFF !important;
+  box-shadow: 0 2px 6px rgba(46, 139, 87, 0.25) !important;
+  transition: all 0.15s ease-in-out;
+}
+.gradient-button:hover {
+  background-color: #267347 !important;
+  box-shadow: 0 4px 12px rgba(46, 139, 87, 0.3) !important;
+}
+
+/* Custom scrollbars */
+::-webkit-scrollbar {
+  width: 6px;
+  height: 6px;
+}
+::-webkit-scrollbar-track {
+  background: #F1F5F9;
+}
+::-webkit-scrollbar-thumb {
+  background: #CBD5E1;
+  border-radius: 9999px;
+}
+::-webkit-scrollbar-thumb:hover {
+  background: #94A3B8;
+}
